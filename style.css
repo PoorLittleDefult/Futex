@@ -7,14 +7,11 @@
     margin: 0;
     /*font-family: 'Arvo';*/
     font-family: 'Roboto';
-  
-
 }
 
 html, body{
     height: 100%;
    
-
 }
 
 ::-webkit-scrollbar {
@@ -45,7 +42,7 @@ html, body{
     position: relative;
     z-index: 2;
     background-image: radial-gradient( circle at top left, #4a5355, #1d2329);
-    background: linear-gradient(-45deg, #563ce7, #9423d5, #237fd5);
+    background: linear-gradient(-45deg, #2500f8, #0059ff, #3498DB);
     background-size: 400% 400%;
     animation: Gradient 10s ease infinite;
     color: rgb(242, 242, 242);
@@ -53,14 +50,14 @@ html, body{
 
 
 header {
-  color: black;
-  background-color: rgba(15, 15, 15, 0.788);
+  /*background-color: #0F172A;*/
+  background-color: #3498DB;
   height: 9vh;
   width: 100vw;
   top: 0;
   position: fixed;
   z-index: 1;
-  filter: drop-shadow(0 0 0.8rem rgb(0, 0, 0));
+  /*filter: drop-shadow(0 0 0.8rem rgb(0, 0, 0));*/
 }
 
 
@@ -106,7 +103,7 @@ nav{
 }
 
 .nav-links ul li a{
-  color: #29AAE1;
+  color: #000000;
   text-decoration: none;
   font-size: 20px ;
   font-weight: bold;
@@ -117,21 +114,11 @@ ul li a:hover{
   color: #2D4090;
 }
 
-/*input[type=text] {
-  padding: 0.8vh;
-  margin-top: 8px;
-  font-size: 15px;
-  border: none;
-  background-color: rgba(15, 15, 15, 0.788);
-  filter: drop-shadow(0 0 0.8rem rgb(0, 0, 0));
-  color: white;
-}*/
-
-
-
 #searchBarWrap{ 
   display: flex;
   justify-content: center;
+  margin-top: 500px;
+
 }
 
 
