@@ -1,87 +1,90 @@
 @font-face {
-    font-family: mont;
-    src: url(fonts/Mont\ Heavy\ DEMO.ttf);
+  font-family: mont;
+  src: url(fonts/Mont\ Heavy\ DEMO.ttf);
 }
 
 * {
-    margin: 0;
-    /*font-family: 'Arvo';*/
-    font-family: 'Roboto';
+  margin: 0;
+  /*font-family: 'Arvo';*/
+  font-family: 'Roboto';
 }
 
-html, body{
-    height: 100%;
-   
+html, body {
+  height: 100%;
 }
 
 ::-webkit-scrollbar {
   width: 0.8vw;
 }
+
 /* Track */
+
 ::-webkit-scrollbar-track {
   background: #464646;
 }
+
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
   background: #000000;
   border-radius: 0px;
 }
+
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
   background: #ffffff;
 }
 
 .background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    z-index: 2;
-    background-image: radial-gradient( circle at top left, #4a5355, #1d2329);
-    background: linear-gradient(-45deg, #2500f8, #0059ff, #3498DB);
-    background-size: 400% 400%;
-    animation: Gradient 10s ease infinite;
-    color: rgb(242, 242, 242);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  background-image: radial-gradient( circle at top left, #4a5355, #1d2329);
+  background: linear-gradient(-45deg, #2500f8, #0059ff, #3498DB);
+  background-size: 400% 400%;
+  animation: Gradient 10s ease infinite;
+  color: rgb(242, 242, 242);
 }
-
 
 header {
   /*background-color: #0F172A;*/
   background-color: #3498DB;
-  height: 9vh;
-  width: 100vw;
+  height: 9%;
+  width: 100%;
   top: 0;
   position: fixed;
   z-index: 1;
   /*filter: drop-shadow(0 0 0.8rem rgb(0, 0, 0));*/
 }
 
-
 @keyframes Gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
   }
-
-#logo{
-    position: absolute;
-    width: 96px;
-    height: 30px;
-    top: 2vh;
-    left: 20px;
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-nav{
+#logo {
+  position: absolute;
+  width: 96px;
+  height: 30px;
+  top: 2vh;
+  left: 20px;
+}
+
+nav {
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -89,65 +92,58 @@ nav{
   overflow: hidden;
 }
 
-.nav-links{
+.nav-links {
   flex: 1;
   text-align: left;
 }
 
-
-.nav-links ul li{
+.nav-links ul li {
   list-style: none;
   display: inline-block;
   padding: 2vh 20px;
   position: relative;
 }
 
-.nav-links ul li a{
+.nav-links ul li a {
   color: #000000;
   text-decoration: none;
-  font-size: 20px ;
+  font-size: 20px;
   font-weight: bold;
 }
 
-
-ul li a:hover{
+ul li a:hover {
   color: #2D4090;
 }
 
-#searchBarWrap{ 
+#searchBarWrap {
   display: flex;
   justify-content: center;
   margin-top: 500px;
-
 }
 
-
-#searchBar{
-  border:#2D4090 solid;
+#searchBar {
+  border: #2D4090 solid;
   border-width: .2em;
   padding: .2em .2em .2em .2em;
   width: 500px;
   height: 25px;
 }
 
-#searchBtn{
-  border:#2D4090 solid;
+#searchBtn {
+  border: #2D4090 solid;
   border-width: .2em;
   border-radius: 0 .7em .7em 0;
-  background-color:white;
-  color:white;
-  font-weight:bold;
+  background-color: white;
+  color: white;
+  font-weight: bold;
   padding-bottom: .2em;
-
 }
 
-
-h1{
-    font-size: 100px;
-    text-align: center;
-    margin-top: -30vh;
-    color: rgb(0, 0, 0);
-  
+h1 {
+  font-size: 100px;
+  text-align: center;
+  margin-top: -30vh;
+  color: rgb(0, 0, 0);
 }
 
 section {
@@ -181,6 +177,7 @@ section {
   background: rgba(255, 255, 255, 0.1);
   overflow: hidden;
 }
+
 .line::after {
   content: "";
   display: block;
@@ -191,25 +188,29 @@ section {
   left: 0;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
   -webkit-animation: drop 7s 0s infinite;
-          animation: drop 7s 0s infinite;
+  animation: drop 7s 0s infinite;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-          animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
 }
+
 .line:nth-child(1) {
   margin-left: -25%;
 }
+
 .line:nth-child(1)::after {
   -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-delay: 2s;
 }
+
 .line:nth-child(3) {
   margin-left: 25%;
 }
+
 .line:nth-child(3)::after {
   -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 
 @-webkit-keyframes drop {
@@ -229,7 +230,3 @@ section {
     top: 110%;
   }
 }
-
-
-
-
