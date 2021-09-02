@@ -4,10 +4,11 @@
  }
  
  * {
-     margin: 0;
-     /*font-family: 'Arvo';*/
-     font-family: 'Roboto';
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
  }
+
  
  html,
  body {
@@ -44,15 +45,14 @@
      background-size: cover;
      position: relative;
      z-index: 2;
-     background: linear-gradient(-45deg, #2500f8, #0059ff, #3498DB);
+     /*background: linear-gradient(-45deg, #2500f8, #0059ff, #3498DB);*/
      background-size: 400% 400%;
      animation: Gradient 10s ease infinite;
      color: rgb(242, 242, 242);
-     background-color: rgba(0, 0, 0, 0.95);
+     background-color: rgb(15, 28, 112);;
  }
  
  header {
-     /*background-color: #0F172A;*/
      background-color: #3498DB;
      width: 100%;
      top: 0;
