@@ -5,7 +5,8 @@
  
  * {
      margin: 0;
-     font-family: 'Montserrat', sans-serif;
+     /*font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;*/
+     font-family: 'Dosis', sans-serif;
  }
  
  html,
@@ -37,15 +38,15 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     height: 50vh;
+     height: 120vh;
      width: 100vw;
      background-position: center;
      background-size: cover;
      position: relative;
-     background: linear-gradient(-45deg, #2500f8, #0059ff, #3498DB);
+     /*background: linear-gradient(-45deg, rgb(15, 28, 112), #0059ff, #3498DB);*/
      background-size: 400% 400%;
      animation: Gradient 5s ease infinite;
-     color: rgb(242, 242, 242);
+     background-color: #1F2937
  }
  
  .background_2 {
@@ -65,7 +66,7 @@
  }
  
  header {
-     background-color: #3498DB;
+     background-color: #0F172A;
      width: 100%;
      top: 0;
      position: fixed;
@@ -96,29 +97,29 @@
      }
  }
  
- ul li {
+ .container ul li {
      list-style: none;
      display: inline-block;
      padding: 10px 20px;
      position: relative;
  }
  
- ul li a {
-     color: #000000;
+ .container ul li a {
+     color: #ffffff;
      text-decoration: none;
      font-size: 20px;
      font-weight: bold;
  }
  
- ul li a:hover {
+ .container ul li a:hover {
      color: #2D4090;
  }
  
  h1 {
      font-size: 80px;
-     color: #000000;
-     margin-top: -10vh;
-     text-align: center;
+     color: #ffffff;
+     margin-bottom: 70vh;
+     font-weight: 400;
  }
  
  .overlay {
@@ -141,4 +142,148 @@
      font-size: 70px;
      margin: 20px;
      text-align: center;
+ }
+ 
+ .arrow {
+     width: 0;
+     height: 0;
+     border-top: 40px solid transparent;
+     border-left: 80px solid rgb(0, 0, 0);
+     border-bottom: 40px solid transparent;
+     animation: animate 2s ease 0s 1 forwards;
+     /*put animation into hover for animation to play during hover*/
+ }
+ 
+ .arrow:hover {
+     border-top: 40px solid transparent;
+     border-left: 80px solid rgb(255, 255, 255);
+ }
+ 
+ @keyframes animate {
+     0% {
+         transform: translateX(-1000px) rotate(180deg);
+         opacity: 1;
+     }
+     100% {
+         transform: translateY(0px) rotate(0deg);
+         opacity: 1;
+     }
+ }
+ 
+ #arrow::after {
+     transform: rotate(180deg);
+ }
+ 
+ .boxed-area {
+     position: static;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+ }
+ 
+ .boxed-area li {
+     position: absolute;
+     display: block;
+     list-style: none;
+     width: 25px;
+     height: 25px;
+     background: rgba(255, 255, 255, 0.2);
+     animation: lmao 20s linear infinite;
+     bottom: -150px;
+ }
+ 
+ .boxed-area li:nth-child(1) {
+     left: 12%;
+     width: 60px;
+     height: 60px;
+     animation-delay: 1.5s;
+     animation-duration: 10s;
+ }
+ 
+ .boxed-area li:nth-child(3) {
+     left: 90%;
+     width: 100px;
+     height: 100px;
+     animation-delay: 5.5s;
+ }
+ 
+ .boxed-area li:nth-child(4) {
+     left: 25%;
+     width: 50px;
+     height: 50px;
+     animation-delay: 4s;
+ }
+ 
+ .boxed-area li:nth-child(5) {
+     left: 60%;
+     width: 100px;
+     height: 100px;
+     animation-delay: 3s;
+ }
+ 
+ .boxed-area li:nth-child(6) {
+     left: 70%;
+     width: 120px;
+     height: 120px;
+     animation-delay: 0.5s;
+     animation-duration: 15s;
+ }
+ 
+ .boxed-area li:nth-child(7) {
+     left: 65%;
+     width: 40px;
+     height: 40px;
+     animation-delay: 0s;
+ }
+ 
+ .boxed-area li:nth-child(8) {
+     left: 15%;
+     width: 110px;
+     height: 110px;
+     animation-duration: 3.5s;
+ }
+ 
+ .boxed-area li:nth-child(9) {
+     left: 46%;
+     width: 110px;
+     height: 110px;
+     animation-duration: 2s;
+     animation-duration: 15s;
+ }
+ 
+ .boxed-area li:nth-child(10) {
+     left: 26%;
+     width: 90px;
+     height: 90px;
+     animation-duration: 10s;
+     animation-delay: 0.2s;
+ }
+ 
+ .boxed-area li:nth-child(11) {
+     left: 35%;
+     width: 400px;
+     height: 40px;
+     animation-duration: 3.5s;
+     animation-delay: 0.5s;
+ }
+ 
+ .boxed-area li:nth-child(11) {
+     left: 50%;
+     width: 100px;
+     height: 100px;
+     animation-duration: 10s;
+     animation-delay: 0.5s;
+ }
+ 
+ @keyframes lmao {
+     0% {
+         transform: translateY(0) rotate(0deg);
+         opacity: 1;
+     }
+     100% {
+         transform: translateY(-800px) rotate(360deg);
+         opacity: 0;
+     }
  }
