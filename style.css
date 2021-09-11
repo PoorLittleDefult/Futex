@@ -112,6 +112,19 @@
  .menu-items li a:hover {
      color: #2D4090;
  }
+<<<<<<< Updated upstream
+=======
+
+ #arrowdown{
+    font-family: "FontAwesome";
+    content: '\f107';
+    width: 96px;
+    height: 30px;
+    top: 10px;
+    left: -10px;
+   
+ }
+>>>>>>> Stashed changes
  
  h1 {
      font-size: 80px;
