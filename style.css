@@ -48,7 +48,6 @@
      animation: Gradient 5s ease infinite;
      background-color: #121c35;
  }
- 
  /*.background_2 {
      display: flex;
      justify-content: center;
@@ -77,11 +76,10 @@
  
  header #logo {
      position: relative;
-     font-size: 1.2rem;
      width: 96px;
      height: 30px;
      top: 10px;
-     left: -10px;
+     left: 10px;
  }
  
  @keyframes Gradient {
@@ -96,29 +94,23 @@
      }
  }
  
- .container ul li {
+ .menu-items li {
      list-style: none;
      display: inline-block;
      padding: 10px 20px;
+     color: #ffffff;
      position: relative;
  }
  
- .container ul li a {
+ .menu-items li a {
      color: #ffffff;
      text-decoration: none;
      font-size: 20px;
      font-weight: bold;
  }
  
- .container ul li a:hover {
+ .menu-items li a:hover {
      color: #2D4090;
- }
-
- .container li.sub-menu::after{
-    right: 20px;
-    top: 50%;
-    transform: translate(-50%);
-    content: 'f107';
  }
  
  h1 {
