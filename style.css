@@ -340,7 +340,7 @@ p {
 @keyframes animate {
     0% {
         transform: rotate(180deg);
-        top: -20px;
+        top: -1000px;
         opacity: 1;
     }
     100% {
