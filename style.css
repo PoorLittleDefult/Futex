@@ -80,6 +80,8 @@ header {
     filter: drop-shadow(0 0 0.4rem rgb(0, 0, 0));
     justify-content: space-between;
     padding: 15px 100px;
+    display: flex;
+    align-items: center;
 }
 
 header #logo {
@@ -158,39 +160,6 @@ p {
     font-size: 70px;
     margin: 20px;
     text-align: center;
-}
-
-.arrow {
-    width: 0;
-    height: 0;
-    position: absolute;
-    border-top: 40px solid transparent;
-    border-left: 80px solid rgb(0, 0, 0);
-    border-bottom: 40px solid transparent;
-    animation: animate 2s ease 0s 1 forwards;
-    /*put animation into hover for animation to play during hover*/
-}
-
-.arrow:hover {
-    border-top: 40px solid transparent;
-    border-left: 80px solid rgb(255, 255, 255);
-}
-
-@keyframes animate {
-    0% {
-        transform: rotate(180deg);
-        left: 0;
-        opacity: 1;
-    }
-    100% {
-        transform: translateX(-50%) rotate(0deg);
-        left: 50vw;
-        opacity: 1;
-    }
-}
-
-#arrow::after {
-    transform: rotate(180deg);
 }
 
 .boxed-area {
@@ -293,7 +262,7 @@ p {
 .boxed-area li:nth-child(11) {
     left: 35%;
     width: 400px;
-    height: 40px;
+    height: 400px;
     animation-duration: 5s;
     animation-delay: 0.5s;
     border-radius: 50%;
@@ -319,13 +288,13 @@ p {
     }
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
 
 /* Drop down menu code */
+
+.dropdown {
+    position: relative;
+    display: flex;
+}
 
 .dropdown-content {
     display: none;
@@ -352,4 +321,92 @@ p {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 60px solid transparent;
+    border-left: 120px solid rgb(255, 255, 255);
+    border-bottom: 60px solid transparent;
+    animation: animate 2s ease 0.5s 1 forwards;
+    top: -100px;
+    left: 50%;
+    border-radius: 3%;
+    /*put animation into hover for animation to play during hover*/
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(180deg);
+        top: -20px;
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) rotate(0deg);
+        top: 400px;
+        opacity: 1;
+    }
+}
+
+#arrow::after {
+    transform: rotate(180deg);
+}
+
+.nft-token {
+    width: 300px;
+    height: 450px;
+    border-radius: 2%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    animation: play 2s ease 0s 1 forwards;
+    /*put animation into hover for animation to play during hover*/
+}
+
+@keyframes play {
+    0% {
+        transform: rotate(90deg);
+        right: -1000px;
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) rotate(0deg);
+        right: 10vw;
+        opacity: 1;
+    }
+}
+
+.nft-token::after {
+    transform: rotate(180deg);
+}
+
+#coin {
+    width: 350px;
+    height: 350px;
+    border-radius: 51%;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    animation: play1 2s ease 0s 1 forwards;
+    /*put animation into hover for animation to play during hover*/
+}
+
+@keyframes play1 {
+    0% {
+        transform: rotate(90deg);
+        left: -1000px;
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) rotate(0deg);
+        left: 30vw;
+        opacity: 1;
+    }
+}
+
+#coin:hover {
+    width: 380px;
+    height: 380px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
 }
