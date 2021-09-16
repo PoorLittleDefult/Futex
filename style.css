@@ -345,7 +345,7 @@ p {
     }
     100% {
         transform: translateX(-50%) rotate(0deg);
-        top: 400px;
+        top: 50vh;
         opacity: 1;
     }
 }
