@@ -86,10 +86,9 @@ header {
 
 header #logo {
     position: relative;
-    width: 96px;
-    height: 30px;
-    top: 10px;
-    left: 10px;
+    width: 128px;
+    height: 72px;
+    left: 20px;
 }
 
 @keyframes Gradient {
