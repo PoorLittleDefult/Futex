@@ -319,6 +319,7 @@ p {
 #arrow {
     height: 100px;
     width: 100px;
+    border-radius: 3%;
     position: absolute;
     transition: 0.5s ease;
     animation: animate 2s ease 1;
@@ -344,7 +345,7 @@ p {
     height: 400px;
     border-radius: 2%;
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(48, 48, 48);
     animation: play 2s ease 0s 1 forwards;
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
