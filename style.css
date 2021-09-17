@@ -84,11 +84,17 @@ header {
     align-items: center;
 }
 
-header #logo {
+#logo {
     position: relative;
+<<<<<<< HEAD
     width: 128px;
     height: 72px;
     left: 20px;
+=======
+    width: 144px;
+    height: 45px;
+    align-items: center;
+>>>>>>> 90bf082af9b4b70b08fcba62d642bb9d7439cd7b
 }
 
 @keyframes Gradient {
@@ -103,7 +109,7 @@ header #logo {
     }
 }
 
-.dropdown a {
+a {
     list-style: none;
     display: inline-block;
     padding: 10px 20px;
@@ -114,7 +120,7 @@ header #logo {
     font-weight: bold;
 }
 
-.dropdown a:hover {
+header a:hover {
     color: #2d4090;
 }
 
@@ -123,10 +129,10 @@ header #logo {
     left: 5px;
 }
 
-.dropdown #menu-icon {
-    color: white;
+header #menu-icon {
     font-size: 20px;
     margin-right: 30px;
+    color: white;
 }
 
 h1 {
@@ -172,7 +178,7 @@ p {
     display: block;
     list-style: none;
     width: 40px;
-    height: 25px;
+    height: 40px;
     background: rgba(255, 255, 255, 0.2);
     animation: lmao 20s linear infinite;
     bottom: -150px;
@@ -338,11 +344,13 @@ p {
 
 #nft-token {
     width: 300px;
-    height: 450px;
+    height: 400px;
     border-radius: 2%;
     position: absolute;
     background-color: rgb(255, 255, 255);
     animation: play 2s ease 0s 1 forwards;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
     /*put animation into hover for animation to play during hover*/
 }
 
@@ -357,6 +365,14 @@ p {
         right: 10%;
         opacity: 1;
     }
+}
+
+#nft-token:hover {
+    position: absolute;
+    width: 315px;
+    height: 420px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
 }
 
 #nft-token::after {
@@ -377,7 +393,7 @@ p {
 
 @keyframes play1 {
     0% {
-        transform: rotate(90deg);
+        transform: rotate(180deg);
         left: -1000px;
         opacity: 1;
     }
@@ -394,3 +410,6 @@ p {
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
 }
+
+
+/* -------------------------------------- */
