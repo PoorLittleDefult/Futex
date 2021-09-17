@@ -86,15 +86,12 @@ header {
 
 #logo {
     position: relative;
-<<<<<<< HEAD
     width: 128px;
     height: 72px;
     left: 20px;
-=======
     width: 144px;
     height: 45px;
     align-items: center;
->>>>>>> 90bf082af9b4b70b08fcba62d642bb9d7439cd7b
 }
 
 @keyframes Gradient {
