@@ -89,7 +89,7 @@ header {
     position: relative;
     width: 128px;
     height: 72px;
-    left: 20px;
+    left: 15px;
 }
 
 @keyframes Gradient {
@@ -285,7 +285,6 @@ p {
     }
 }
 
-
 /* Drop down menu code */
 
 .dropdown-content {
@@ -375,10 +374,18 @@ p {
     transform: rotate(180deg);
 }
 
+h2{
+    font-size: 300px;
+    position: absolute;
+    left: 90px;
+    align-items: center;
+    color: #000000;
+}
+
 #coin {
     width: 350px;
     height: 350px;
-    border-radius: 51%;
+    border-radius: 50%;
     position: absolute;
     background-color: rgb(31, 31, 31);
     animation: play1 2s ease 0s 1 forwards;
