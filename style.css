@@ -45,11 +45,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     background-position: center;
     background-size: cover;
-    position: relative;
     /* background: linear-gradient(-45deg, rgb(255, 238, 0), #ff5e00,  #ff3300); */
     /* animation: Gradient 5s ease infinite; */
     /* background-color: #121c35; */
@@ -68,7 +67,7 @@ body {
     z-index: 1;
     background-size: 400% 400%;
     animation: Gradient 5s ease infinite;
-    background-color: rgb(15, 28, 112);
+    background-color: #e10e68;
 }
 
 header {
@@ -81,7 +80,7 @@ header {
     padding: 15px 100px;
     display: flex;
     align-items: center;
-    left: 50%;
+    left: 45%;
 }
 
 #logo {
@@ -90,7 +89,21 @@ header {
     margin-bottom: 750px;
 }
 
-
+#instagram,
+#twitter,
+#youtube {
+    width: 30%;
+    color: white;
+    margin-bottom: 650px;
+    padding: 10px 10px;
+    justify-content: space-between;
+    display: inline-block;
+    margin-right: -200px;
+    position: relative;
+    /* background-color: #e10e68;
+    background-color: #ff612e;
+    background-color: #ffe041; */
+}
 
 @keyframes Gradient {
     0% {
@@ -116,7 +129,7 @@ a {
 }
 
 header a:hover {
-    color: #2d4090;
+    color: #e10e68;
 }
 
 #arrowdown {
@@ -137,27 +150,13 @@ h1 {
     font-weight: 400;
 }
 
-.overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 115vh;
-    width: 60vw;
-    background-size: cover;
-    position: relative;
-    z-index: 3;
-    background-size: 400% 400%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50px;
-    margin-top: -20vh;
-}
-
 p {
     color: black;
     font-size: 70px;
     margin: 20px;
     text-align: center;
 }
+
 
 /* .boxed-area {
     position: static;
@@ -300,7 +299,7 @@ p {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #121c35;
+    background-color: #e10e65;
     min-width: 300px;
     border-radius: 10px;
     border: 1px solid white;
@@ -315,7 +314,7 @@ p {
 }
 
 .dropdown-content a:hover {
-    background-color: #233769;
+    background-color: #692354;
     border-radius: 10px;
 }
 
@@ -331,10 +330,9 @@ p {
     position: absolute;
     transition: 0.5s ease;
     animation: animate 2s ease 1;
-    top: 44%;
+    top: 50%;
     left: 47%;
     align-items: center;
-
     /*put animation into hover for animation to play during hover*/
 }
 
@@ -345,7 +343,7 @@ p {
         opacity: 1;
     }
     100% {
-        top: 44%;
+        top: 50%;
         opacity: 1;
     }
 }
@@ -387,7 +385,7 @@ p {
     transform: rotate(180deg);
 }
 
-h2{
+h2 {
     font-size: 300px;
     position: absolute;
     left: 90px;
@@ -429,6 +427,7 @@ h2{
 
 
 /* -------------------------------------- */
+
 
 /* #blur{
 width: 15px;
