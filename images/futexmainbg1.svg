@@ -1,0 +1,29 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1921.5 1081">
+    <defs>
+        <style>.cls-1{fill:url(#linear-gradient);}.cls-2{stroke-miterlimit:10;fill:url(#linear-gradient-2);stroke:url(#linear-gradient-3);}.cls-3{fill:#1a1a1a;}.cls-4{fill:url(#linear-gradient-4);}.cls-5{fill:url(#linear-gradient-5);}.cls-6{fill:url(#linear-gradient-6);}</style>
+        <linearGradient id="linear-gradient" x1="-52.37" y1="111.7" x2="1856.79" y2="1180.08" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#e10e68" />
+            <stop offset="1" stop-color="#ffbe2e" />
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1="1920.5" y1="-0.5" x2="1920.5" y2="-0.5" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#e27731" />
+            <stop offset="0.43" stop-color="#d75c2f" />
+            <stop offset="1" stop-color="#c7322b" />
+        </linearGradient>
+        <linearGradient id="linear-gradient-3" x1="1920.5" y1="-0.5" x2="1920.5" y2="-0.5" gradientUnits="userSpaceOnUse">
+            <stop offset="0.06" stop-color="#fff" />
+            <stop offset="0.62" />
+        </linearGradient>
+        <linearGradient id="linear-gradient-4" x1="1828.44" y1="439.73" x2="1961.32" y2="514.09" xlink:href="#linear-gradient" />
+        <linearGradient id="linear-gradient-5" x1="1828.44" y1="675.73" x2="1961.32" y2="750.09" xlink:href="#linear-gradient" />
+        <linearGradient id="linear-gradient-6" x1="1826.44" y1="911.73" x2="1959.32" y2="986.09" xlink:href="#linear-gradient" />
+    </defs>
+    <path class="cls-1" d="M-.5.5,853,2s277,211,653,214,415,63,415,63l-1.5,801.5H-.5Z" transform="translate(0.5 0.5)" />
+    <path class="cls-2" d="M1920.5-.5" transform="translate(0.5 0.5)" />
+    <path class="cls-3" d="M808,2s332,215.5,698.5,215.5S1920,279,1920,279l1-276Z" transform="translate(0.5 0.5)" />
+    <path class="cls-3" d="M853.13,1079S184.5,998.5,201.5,778.5,0,600.9,0,600.9l-.5,477.6Z" transform="translate(0.5 0.5)" />
+    <path class="cls-4" d="M1921,587a103,103,0,0,1,0-206" transform="translate(0.5 0.5)" />
+    <path class="cls-5" d="M1921,823a103,103,0,0,1,0-206" transform="translate(0.5 0.5)" />
+    <path class="cls-6" d="M1919,1059a103,103,0,0,1,0-206" transform="translate(0.5 0.5)" />
+    <path class="cls-3" d="M-.5.5l467.76-1S426,193.23,0,205" transform="translate(0.5 0.5)" />
+</svg>

@@ -52,22 +52,21 @@ body {
     /* background: linear-gradient(-45deg, rgb(255, 238, 0), #ff5e00,  #ff3300); */
     /* animation: Gradient 5s ease infinite; */
     /* background-color: #121c35; */
-    background-image: url(images/futexmainbg.png);
+    background-image: url(images/futexmainbg1.svg);
+    position: relative;
 }
 
 .background_2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     background-position: center;
     background-size: cover;
     position: relative;
     z-index: 1;
-    background-size: 400% 400%;
-    animation: Gradient 5s ease infinite;
-    background-color: #e10e68;
+    background-image: url(images/futexmainbg2.svg);
 }
 
 header {
