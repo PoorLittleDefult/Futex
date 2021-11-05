@@ -1,433 +1,295 @@
-@font-face {
-    font-family: mont;
-    src: url(fonts/Mont\ Heavy\ DEMO.ttf);
-}
-
-* {
-    margin: 0;
-    /*font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;*/
-    font-family: "Dosis", sans-serif;
-}
-
-html,
-body {
-    /* height: 100%; */
-    overflow-x: hidden;
-}
-
-::-webkit-scrollbar {
-    width: 0.8vw;
-}
-
-
-/* Track */
-
-::-webkit-scrollbar-track {
-    background: #464646;
-}
-
-
-/* Handle */
-
-::-webkit-scrollbar-thumb {
-    background: #000000;
-    border-radius: 0px;
-}
-
-
-/* Handle on hover */
-
-::-webkit-scrollbar-thumb:hover {
-    background: #000000;
-}
-
-.background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    /* background: linear-gradient(-45deg, rgb(255, 238, 0), #ff5e00,  #ff3300); */
-    /* animation: Gradient 5s ease infinite; */
-    /* background-color: #121c35; */
-    background-image: url(images/futexmainbgv3.png);
-}
-
-.background_2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120vh;
-    width: 100vw;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-    background-image: url(images/futexmainbg2.svg);
-}
-
-header {
-    /* background-color: #0f172a; */
-    width: 100%;
-    height: 4%;
-    top: 0;
-    position: fixed;
-    z-index: 3;
-    padding: 15px 100px;
-    display: flex;
-    align-items: center;
-    left: 45%;
-}
-
-#logo {
-    width: 192px;
-    height: 108px;
-    margin-bottom: 750px;
-}
-
-#instagram,
-#twitter,
-#youtube {
-    width: 30%;
-    color: white;
-    margin-bottom: 650px;
-    padding: 10px 10px;
-    justify-content: space-between;
-    display: inline-block;
-    margin-right: -200px;
-    position: relative;
-    /* background-color: #e10e68;
+    @font-face {
+        font-family: mont;
+        src: url(fonts/Mont\ Heavy\ DEMO.ttf);
+    }
+    
+    * {
+        margin: 0;
+        /*font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;*/
+        font-family: "Dosis", sans-serif;
+    }
+    
+    html,
+    body {
+        /* height: 100%; */
+        overflow-x: hidden;
+    }
+    
+     ::-webkit-scrollbar {
+        width: 0.8vw;
+    }
+    /* Track */
+    
+     ::-webkit-scrollbar-track {
+        background: #464646;
+    }
+    /* Handle */
+    
+     ::-webkit-scrollbar-thumb {
+        background: #000000;
+        border-radius: 0px;
+    }
+    /* Handle on hover */
+    
+     ::-webkit-scrollbar-thumb:hover {
+        background: #000000;
+    }
+    
+    .background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background: linear-gradient(-45deg, #ffbe2e, #e10e68);
+        animation: Gradient 5s ease infinite;
+        /* background-image: url(images/futexmainbgv3.png); */
+    }
+    
+    .background_2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+        width: 100vw;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+        background-image: url(images/futexmainbg2.svg);
+    }
+    
+    header {
+        /* background-color: #0f172a; */
+        width: 100%;
+        height: 4%;
+        top: 0;
+        position: fixed;
+        z-index: 3;
+        padding: 15px 100px;
+        display: flex;
+        align-items: center;
+        left: 45%;
+    }
+    
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 8vh;
+        background-color: red;
+        color: white;
+        text-align: center;
+    }
+    
+    #logo {
+        width: 192px;
+        height: 108px;
+        position: fixed;
+        top: 0;
+    }
+    
+    #instagram,
+    #twitter,
+    #youtube {
+        width: 30%;
+        color: white;
+        margin-bottom: 500px;
+        padding: 10px 10px;
+        justify-content: space-between;
+        display: inline-block;
+        margin-right: -200px;
+        /* background-color: #e10e68;
     background-color: #ff612e;
     background-color: #ffe041; */
-}
-
-@keyframes Gradient {
-    0% {
-        background-position: 0% 50%;
     }
-    50% {
-        background-position: 100% 50%;
+    
+    @keyframes Gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
     }
-    100% {
-        background-position: 0% 50%;
+    
+    a {
+        list-style: none;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #ffffff;
+        position: relative;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
     }
-}
-
-a {
-    list-style: none;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #ffffff;
-    position: relative;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-header a:hover {
-    color: #e10e68;
-}
-
-#arrowdown {
-    position: relative;
-    left: 5px;
-}
-
-header #menu-icon {
-    font-size: 20px;
-    margin-right: 30px;
-    color: white;
-}
-
-h1 {
-    font-size: 80px;
-    color: #ffffff;
-    margin-bottom: 70vh;
-    font-weight: 400;
-}
-
-p {
-    color: black;
-    font-size: 70px;
-    margin: 20px;
-    text-align: center;
-}
-
-
-/* .boxed-area {
-    position: static;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.boxed-area li {
-    position: absolute;
-    display: block;
-    list-style: none;
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    box-shadow:
-      inset 0 0 50px #fff,
-      inset 20px 0 80px rgb(0, 4, 255),
-      inset -20px 0 80px #0ff,
-      inset 20px 0 300px rgb(0, 4, 255),
-      inset -20px 0 300px #0ff,
-      0 0 50px #fff,
-      -10px 0 80px rgb(0, 4, 255),
-      10px 0 80px #0ff;
-    animation: lmao 20s linear infinite;
-    bottom: -150px;
-
-} 
-
-.boxed-area li:nth-child(1) {
-    left: 12%;
-    width: 60px;
-    height: 60px;
-    animation-delay: 1.5s;
-    animation-duration: 10s;
-    border-radius: 50%;
-}
-
-.boxed-area li:nth-child(3) {
-    left: 90%;
-    width: 100px;
-    height: 100px;
-    animation-delay: 5.5s;
-    border-radius: 50%;
-}
-
-.boxed-area li:nth-child(4) {
-    left: 25%;
-    width: 50px;
-    height: 50px;
-    animation-delay: 4s;
-    border-radius: 50%;
-}
-
-.boxed-area li:nth-child(5) {
-    left: 60%;
-    width: 100px;
-    height: 100px;
-    animation-delay: 3s;
-    border-radius: 50%;
-}
-
-.boxed-area li:nth-child(6) {
-    left: 70%;
-    width: 120px;
-    height: 120px;
-    animation-delay: 0.5s;
-    animation-duration: 15s;
-    border-radius: 50%;
-}
-
-.boxed-area li:nth-child(7) {
-    left: 65%;
-    width: 40px;
-    height: 40px;
-    animation-delay: 0s;
-    border-radius: 50%;
-}
-
-.boxed-area li:nth-child(8) {
-    left: 15%;
-    width: 110px;
-    height: 110px;
-    animation-duration: 3.5s;
-    border-radius: 50%;
-}
-
-.boxed-area li:nth-child(9) {
-    left: 46%;
-    width: 110px;
-    height: 110px;
-    animation-duration: 2s;
-    animation-duration: 15s;
-    border-radius: 50%;
-}
-
-.boxed-area li:nth-child(10) {
-    left: 26%;
-    width: 90px;
-    height: 90px;
-    animation-duration: 10s;
-    animation-delay: 0.2s;
-    border-radius: 50%;
-}
-
-.boxed-area li:nth-child(11) {
-    left: 35%;
-    width: 400px;
-    height: 400px;
-    animation-duration: 5s;
-    animation-delay: 0.5s;
-    border-radius: 50%;
-}
-
-.boxed-area li:nth-child(11) {
-    left: 50%;
-    width: 100px;
-    height: 100px;
-    animation-duration: 10s;
-    animation-delay: 0.5s;
-    border-radius: 50%;
-}
-
-@keyframes lmao {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
+    
+    header a:hover {
+        color: #e10e68;
     }
-    100% {
-        transform: translateY(-800px) rotate(360deg);
-        opacity: 0;
+    
+    #arrowdown {
+        position: relative;
+        left: 5px;
     }
-}
-
-/* Drop down menu code */
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #e10e65;
-    min-width: 300px;
-    border-radius: 10px;
-    border: 1px solid white;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
-    margin: 10px;
-}
-
-.dropdown-content a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #692354;
-    border-radius: 10px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-#arrow {
-    color: #1A1A1A;
-    height: 100px;
-    width: 100px;
-    border-radius: 3%;
-    position: absolute;
-    transition: 0.5s ease;
-    animation: animate 2s ease 1;
-    top: 45%;
-    left: 47%;
-    align-items: center;
-    /*put animation into hover for animation to play during hover*/
-}
-
-@keyframes animate {
-    0% {
-        transform: rotate(180deg);
-        top: -1000px;
-        opacity: 1;
+    
+    header #menu-icon {
+        font-size: 20px;
+        margin-right: 30px;
+        color: white;
     }
-    100% {
+    
+    h1 {
+        font-size: 80px;
+        color: #ffffff;
+        margin-bottom: 70vh;
+        font-weight: 400;
+    }
+    
+    p {
+        color: black;
+        font-size: 70px;
+        margin: 20px;
+        text-align: center;
+    }
+    /* Drop down menu code */
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #e10e65;
+        min-width: 300px;
+        border-radius: 10px;
+        border: 1px solid white;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+    }
+    
+    .dropdown-content a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #692354;
+        border-radius: 10px;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    #arrow {
+        color: #1A1A1A;
+        height: 80px;
+        width: 80px;
+        border-radius: 3%;
+        position: absolute;
+        transition: 0.5s ease;
+        animation: animate 2s ease 1;
         top: 45%;
-        opacity: 1;
+        left: 47%;
+        align-items: center;
+        /*put animation into hover for animation to play during hover*/
     }
-}
-
-#nft-token {
-    width: 300px;
-    height: 400px;
-    border-radius: 2%;
-    position: absolute;
-    background-color: rgb(48, 48, 48);
-    animation: play 2s ease 0s 1 forwards;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-    /*put animation into hover for animation to play during hover*/
-}
-
-@keyframes play {
-    0% {
-        transform: rotate(90deg);
-        right: -1000px;
-        opacity: 1;
+    
+    @keyframes animate {
+        0% {
+            transform: rotate(180deg);
+            top: -1000px;
+            opacity: 1;
+        }
+        100% {
+            top: 45%;
+            opacity: 1;
+        }
     }
-    100% {
-        transform: translateX(-50%) rotate(0deg);
-        right: 10%;
-        opacity: 1;
+    
+    #nft-token {
+        width: 225px;
+        height: 300px;
+        border-radius: 2%;
+        position: absolute;
+        background-color: rgb(48, 48, 48);
+        animation: play 2s ease 0s 1 forwards;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+        /*put animation into hover for animation to play during hover*/
     }
-}
-
-#nft-token:hover {
-    position: absolute;
-    width: 315px;
-    height: 420px;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-}
-
-#nft-token::after {
-    transform: rotate(180deg);
-}
-
-h2 {
-    font-size: 300px;
-    position: absolute;
-    left: 90px;
-    align-items: center;
-    color: #000000;
-}
-
-#coin {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    position: absolute;
-    background-color: rgb(31, 31, 31);
-    animation: play1 2s ease 0s 1 forwards;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-    /*put animation into hover for animation to play during hover*/
-}
-
-@keyframes play1 {
-    0% {
+    
+    @keyframes play {
+        0% {
+            transform: rotate(90deg);
+            right: -1000px;
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(-50%) rotate(0deg);
+            right: 17%;
+            opacity: 1;
+        }
+    }
+    
+    #nft-token:hover {
+        position: absolute;
+        width: 240px;
+        height: 320px;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+    }
+    
+    #nft-token::after {
         transform: rotate(180deg);
-        left: -1000px;
-        opacity: 1;
     }
-    100% {
-        transform: translateX(-50%) rotate(0deg);
-        left: 30%;
-        opacity: 1;
+    
+    h2 {
+        font-size: 225px;
+        position: absolute;
+        left: 70px;
+        align-items: center;
+        color: #000000;
     }
-}
-
-#coin:hover {
-    width: 380px;
-    height: 380px;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-}
-
-
-/* -------------------------------------- */
-
-
-/* #blur{
+    
+    #coin {
+        width: 262.5px;
+        height: 262.5px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: rgb(31, 31, 31);
+        animation: play1 2s ease 0s 1 forwards;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+        /*put animation into hover for animation to play during hover*/
+    }
+    
+    @keyframes play1 {
+        0% {
+            transform: rotate(180deg);
+            left: -1000px;
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(-50%) rotate(0deg);
+            left: 32%;
+            opacity: 1;
+        }
+    }
+    
+    #coin:hover {
+        width: 300px;
+        height: 300px;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+    }
+    /* -------------------------------------- */
+    /* #blur{
 width: 15px;
 height: 15px;
 border-radius: 50%;
