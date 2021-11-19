@@ -9,18 +9,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
 </head>
 
 <body>
     <section class="background">
         <header>
-            <a href="./index.html" target="blank" style="align-items: center;"><img src="images/futexfinalv2.svg" id="logo"></a>
-            <a href="index.html">SIGN IN<i id="arrowdown" class="fas fa-angle-down"></i></a>
+            <a class="signin" href="index.html" style="right: -45%;">SIGN IN<i id="arrowdown" class="fas fa-angle-down"></i></a>
         </header>
-        <div class="loginbg"></div>
+        <div class="loginbg">
+            <a href=" ./index.html " target="blank"><img src="images/futexfinalv2.svg " id="logo"></a>
+            <div class="container">
+                <label for="uname" style="color: #e10e68;"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
 
+                <label for="psw" style="color: #e10e68;"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label style="color: #e10e68;">
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            </div>
     </section>
 </body>
 

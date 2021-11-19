@@ -88,8 +88,8 @@
     #logo {
         width: 160px;
         height: 90px;
-        position: fixed;
-        top: 0;
+        padding: 0px 110px;
+        position: relative;
     }
     
     #instagram,
@@ -119,10 +119,9 @@
         }
     }
     
-    a {
+    .signin {
         list-style: none;
-        display: inline-block;
-        padding: 10px 20px;
+        display: flex;
         color: #111111;
         position: relative;
         text-decoration: none;
@@ -159,95 +158,6 @@
     }
     /* Drop down menu code */
     
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #e10e65;
-        min-width: 300px;
-        border-radius: 10px;
-        border: 1px solid white;
-        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
-        margin: 10px;
-    }
-    
-    .dropdown-content a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        display: block;
-    }
-    
-    .dropdown-content a:hover {
-        background-color: #692354;
-        border-radius: 10px;
-    }
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    
-    #arrow {
-        color: #1A1A1A;
-        height: 80px;
-        width: 80px;
-        border-radius: 3%;
-        position: absolute;
-        transition: 0.5s ease;
-        animation: animate 2s ease 1;
-        top: 45%;
-        left: 47%;
-        align-items: center;
-        /*put animation into hover for animation to play during hover*/
-    }
-    
-    @keyframes animate {
-        0% {
-            transform: rotate(180deg);
-            top: -1000px;
-            opacity: 1;
-        }
-        100% {
-            top: 45%;
-            opacity: 1;
-        }
-    }
-    
-    #nft-token {
-        width: 225px;
-        height: 300px;
-        border-radius: 2%;
-        position: absolute;
-        background-color: rgb(48, 48, 48);
-        animation: play 2s ease 0s 1 forwards;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-out;
-        /*put animation into hover for animation to play during hover*/
-    }
-    
-    @keyframes play {
-        0% {
-            transform: rotate(90deg);
-            right: -1000px;
-            opacity: 1;
-        }
-        100% {
-            transform: translateX(-50%) rotate(0deg);
-            right: 17%;
-            opacity: 1;
-        }
-    }
-    
-    #nft-token:hover {
-        position: absolute;
-        width: 240px;
-        height: 320px;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-out;
-    }
-    
-    #nft-token::after {
-        transform: rotate(180deg);
-    }
-    
     h2 {
         font-size: 225px;
         position: absolute;
@@ -256,50 +166,69 @@
         color: #000000;
     }
     
-    #coin {
-        width: 262.5px;
-        height: 262.5px;
-        border-radius: 50%;
-        position: absolute;
-        background-color: rgb(31, 31, 31);
-        animation: play1 2s ease 0s 1 forwards;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-out;
-        /*put animation into hover for animation to play during hover*/
-    }
-    
-    @keyframes play1 {
-        0% {
-            transform: rotate(180deg);
-            left: -1000px;
-            opacity: 1;
-        }
-        100% {
-            transform: translateX(-50%) rotate(0deg);
-            left: 32%;
-            opacity: 1;
-        }
-    }
-    
-    #coin:hover {
-        width: 300px;
-        height: 300px;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-out;
-    }
-    /* -------------------------------------- */
-    /* #blur{
-width: 15px;
-height: 15px;
-border-radius: 50%;
-background-color: rgb(0, 225, 255);
-box-shadow: 0 0 1000px 500px rgb(0, 225, 255);
-align-self: center;
-} */
-    
     .loginbg {
-        width: 100px;
-        height: 100px;
-        background-color: rgb(255, 255, 255);
+        width: 400px;
+        height: 500px;
+        background-color: #1A1A1A;
         align-items: center;
+        border-radius: 5px;
+    }
+    
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+    button {
+        background-color: #f12c09;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    button:hover {
+        opacity: 0.8;
+    }
+    
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+    }
+    
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+    
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
+    }
+    
+    .container {
+        padding: 16px;
+    }
+    
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+    
+    @media screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+        .cancelbtn {
+            width: 100%;
+        }
     }
