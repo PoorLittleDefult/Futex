@@ -1,80 +1,99 @@
-    @font-face {
-        font-family: mont;
-        src: url(fonts/Mont\ Heavy\ DEMO.ttf);
-    }
-    
-    * {
-        margin: 0;
-        /*font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;*/
-        font-family: "Dosis", sans-serif;
-    }
-    
-    html,
-    body {
-        /* height: 100%; */
-        overflow-x: hidden;
-    }
-    
-     ::-webkit-scrollbar {
-        width: 0.8vw;
-    }
-    /* Track */
-    
-     ::-webkit-scrollbar-track {
-        background: #464646;
-    }
-    /* Handle */
-    
-     ::-webkit-scrollbar-thumb {
-        background: #000000;
-        border-radius: 0px;
-    }
-    /* Handle on hover */
-    
-     ::-webkit-scrollbar-thumb:hover {
-        background: #000000;
-    }
-    
-    .background {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-        background-position: center;
-        background-size: cover;
-        background: linear-gradient(-45deg, #ffbe2e, #e10e68);
-        animation: Gradient 5s ease infinite;
-        /* background-image: url(images/futexmainbgv3.png); */
-    }
-    
-    .background_2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 120vh;
-        width: 100vw;
-        background-position: center;
-        background-size: cover;
-        position: relative;
-        z-index: 1;
-        background-image: url(images/futexmainbg2.svg);
-    }
-    
-    header {
-        /* background-color: #0f172a; */
-        width: 100%;
-        height: 4%;
-        top: 0;
-        position: fixed;
-        z-index: 3;
-        padding: 15px 100px;
-        display: flex;
-        align-items: center;
-        left: 37%;
-    }
-    
-    footer {
+@font-face {
+    font-family: mont;
+    src: url(fonts/Mont\ Heavy\ DEMO.ttf);
+}
+
+* {
+    margin: 0;
+    /*font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;*/
+    font-family: "Dosis", sans-serif;
+}
+
+html,
+body {
+    /* height: 100%; */
+    overflow-x: hidden;
+}
+
+ ::-webkit-scrollbar {
+    width: 0.8vw;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #464646;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 0px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #000000;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    /* background: linear-gradient(-45deg, #a5894c, #e10e68); */
+    animation: Gradient 5s ease infinite;
+    background: linear-gradient(-45deg, #0ee1cf, #1640b6);
+    /* background-image: url(images/futexmainbgv3.png); */
+}
+
+.background_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(-45deg, #ffbe2e, #e10e68);
+    animation: Gradient 5s ease infinite;
+}
+
+header {
+    /* background-color: #0f172a; */
+    width: 100%;
+    height: 4%;
+    top: 0;
+    position: fixed;
+    z-index: 3;
+    padding: 15px 100px;
+    display: flex;
+    align-items: center;
+    left: 37%;
+}
+
+.headerlogo {
+    width: 9vw;
+    height: 10vh;
+    background-color: black;
+    top: 0;
+    left: 0%;
+    margin-left: -6%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+/* footer {
         position: fixed;
         left: 0;
         bottom: 0;
@@ -83,212 +102,218 @@
         background-color: red;
         color: white;
         text-align: center;
-    }
-    
-    #logo {
-        width: 160px;
-        height: 90px;
-        position: fixed;
-        top: 0;
-    }
-    
-    #instagram,
-    #twitter,
-    #youtube {
-        width: 30%;
-        color: white;
-        margin-bottom: 500px;
-        padding: 10px 10px;
-        justify-content: space-between;
-        display: inline-block;
-        margin-right: -200px;
-        /* background-color: #e10e68;
+    } */
+
+#logo {
+    width: 160px;
+    height: 90px;
+    position: fixed;
+    top: 0;
+}
+
+#instagram,
+#twitter,
+#youtube {
+    width: 30%;
+    color: white;
+    margin-bottom: 500px;
+    padding: 10px 10px;
+    justify-content: space-between;
+    display: inline-block;
+    margin-right: -200px;
+    /* background-color: #e10e68;
     background-color: #ff612e;
     background-color: #ffe041; */
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
     }
-    
-    @keyframes Gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
+    50% {
+        background-position: 100% 50%;
     }
-    
-    a {
-        list-style: none;
-        display: inline-block;
-        padding: 10px 20px;
-        color: #111111;
-        position: relative;
-        text-decoration: none;
-        font-size: 20px;
+    100% {
+        background-position: 0% 50%;
     }
-    
-    header a:hover {
-        color: #e10e68;
-    }
-    
-    #arrowdown {
-        position: relative;
-        left: 5px;
-    }
-    
-    header #menu-icon {
-        font-size: 20px;
-        margin-right: 30px;
-        color: rgb(0, 0, 0);
-    }
-    
-    h1 {
-        font-size: 80px;
-        color: #ffffff;
-        margin-bottom: 70vh;
-        font-weight: 400;
-    }
-    
-    p {
-        color: black;
-        font-size: 70px;
-        margin: 20px;
-        text-align: center;
-    }
-    /* Drop down menu code */
-    
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #e10e65;
-        min-width: 300px;
-        border-radius: 10px;
-        border: 1px solid white;
-        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
-        margin: 10px;
-    }
-    
-    .dropdown-content a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        display: block;
-    }
-    
-    .dropdown-content a:hover {
-        background-color: #692354;
-        border-radius: 10px;
-    }
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    
-    #arrow {
-        color: #1A1A1A;
-        height: 80px;
-        width: 80px;
-        border-radius: 3%;
-        position: absolute;
-        transition: 0.5s ease;
-        animation: animate 2s ease 1;
-        top: 45%;
-        left: 47%;
-        align-items: center;
-        /*put animation into hover for animation to play during hover*/
-    }
-    
-    @keyframes animate {
-        0% {
-            transform: rotate(180deg);
-            top: -1000px;
-            opacity: 1;
-        }
-        100% {
-            top: 45%;
-            opacity: 1;
-        }
-    }
-    
-    #nft-token {
-        width: 225px;
-        height: 300px;
-        border-radius: 2%;
-        position: absolute;
-        background-color: rgb(48, 48, 48);
-        animation: play 2s ease 0s 1 forwards;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-out;
-        /*put animation into hover for animation to play during hover*/
-    }
-    
-    @keyframes play {
-        0% {
-            transform: rotate(90deg);
-            right: -1000px;
-            opacity: 1;
-        }
-        100% {
-            transform: translateX(-50%) rotate(0deg);
-            right: 17%;
-            opacity: 1;
-        }
-    }
-    
-    #nft-token:hover {
-        position: absolute;
-        width: 240px;
-        height: 320px;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-out;
-    }
-    
-    #nft-token::after {
+}
+
+a {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #111111;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header a:hover {
+    color: #e10e68;
+}
+
+#arrowdown {
+    position: relative;
+    left: 5px;
+}
+
+header #menu-icon {
+    font-size: 20px;
+    margin-right: 30px;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    font-size: 80px;
+    color: #ffffff;
+    margin-bottom: 70vh;
+    font-weight: 400;
+}
+
+p {
+    color: black;
+    font-size: 70px;
+    margin: 20px;
+    text-align: center;
+}
+
+
+/* Drop down menu code */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e10e65;
+    min-width: 300px;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #692354;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#arrow {
+    color: #1A1A1A;
+    height: 80px;
+    width: 80px;
+    border-radius: 3%;
+    position: absolute;
+    transition: 0.5s ease;
+    animation: animate 2s ease 1;
+    top: 45%;
+    left: 47%;
+    align-items: center;
+    /*put animation into hover for animation to play during hover*/
+}
+
+@keyframes animate {
+    0% {
         transform: rotate(180deg);
+        top: -1000px;
+        opacity: 1;
     }
-    
-    h2 {
-        font-size: 225px;
-        position: absolute;
-        left: 70px;
-        align-items: center;
-        color: #000000;
+    100% {
+        top: 45%;
+        opacity: 1;
     }
-    
-    #coin {
-        width: 262.5px;
-        height: 262.5px;
-        border-radius: 50%;
-        position: absolute;
-        background-color: rgb(31, 31, 31);
-        animation: play1 2s ease 0s 1 forwards;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-out;
-        /*put animation into hover for animation to play during hover*/
+}
+
+#nft-token {
+    width: 225px;
+    height: 300px;
+    border-radius: 2%;
+    position: absolute;
+    background-color: rgb(48, 48, 48);
+    animation: play 2s ease 0s 1 forwards;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    /*put animation into hover for animation to play during hover*/
+}
+
+@keyframes play {
+    0% {
+        transform: rotate(90deg);
+        right: -1000px;
+        opacity: 1;
     }
-    
-    @keyframes play1 {
-        0% {
-            transform: rotate(180deg);
-            left: -1000px;
-            opacity: 1;
-        }
-        100% {
-            transform: translateX(-50%) rotate(0deg);
-            left: 32%;
-            opacity: 1;
-        }
+    100% {
+        transform: translateX(-50%) rotate(0deg);
+        right: 17%;
+        opacity: 1;
     }
-    
-    #coin:hover {
-        width: 300px;
-        height: 300px;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-out;
+}
+
+#nft-token:hover {
+    position: absolute;
+    width: 240px;
+    height: 320px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+#nft-token::after {
+    transform: rotate(180deg);
+}
+
+h2 {
+    font-size: 225px;
+    position: absolute;
+    left: 70px;
+    align-items: center;
+    color: #000000;
+}
+
+#coin {
+    width: 262.5px;
+    height: 262.5px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    animation: play1 2s ease 0s 1 forwards;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    /*put animation into hover for animation to play during hover*/
+}
+
+@keyframes play1 {
+    0% {
+        transform: rotate(180deg);
+        left: -1000px;
+        opacity: 1;
     }
-    /* -------------------------------------- */
-    /* #blur{
+    100% {
+        transform: translateX(-50%) rotate(0deg);
+        left: 32%;
+        opacity: 1;
+    }
+}
+
+#coin:hover {
+    width: 300px;
+    height: 300px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+
+/* -------------------------------------- */
+
+
+/* #blur{
 width: 15px;
 height: 15px;
 border-radius: 50%;
