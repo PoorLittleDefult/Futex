@@ -226,100 +226,97 @@ p {
         top: -1000px;
         opacity: 1;
     }
-<<<<<<< HEAD
-    100% {
-=======
-    
-    @keyframes Gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-    
-    a {
-        list-style: none;
-        display: flex;
-        padding: 10px 20px;
-        color: #111111;
-        text-decoration: none;
-        font-size: 20px;
+}
 
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
     }
-    
-    header a:hover {
-        color: #e10e68;
+    50% {
+        background-position: 100% 50%;
     }
-    
-    #arrowdown {
-        position: relative;
-        left: 5px;
+    100% {
+        background-position: 0% 50%;
     }
-    
-    header #menu-icon {
-        font-size: 20px;
-        margin-right: 30px;
-        color: rgb(0, 0, 0);
-    }
-    
-    h1 {
-        font-size: 80px;
-        color: #ffffff;
-        margin-bottom: 70vh;
-        font-weight: 400;
-    }
-    
-    p {
-        color: black;
-        font-size: 70px;
-        margin: 20px;
-        text-align: center;
-    }
-    /* Drop down menu code */
-    
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #e10e65;
-        min-width: 300px;
-        border-radius: 10px;
-        border: 1px solid white;
-        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
-        margin: 10px;
-    }
-    
-    .dropdown-content a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        display: block;
-    }
-    
-    .dropdown-content a:hover {
-        background-color: #692354;
-        border-radius: 10px;
-    }
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    
-    #arrow {
-        color: #1A1A1A;
-        height: 80px;
-        width: 80px;
-        border-radius: 3%;
-        position: absolute;
-        transition: 0.5s ease;
-        animation: animate 2s ease 1;
->>>>>>> adce79a9ea5d561ea889568339f8a1955a8f9830
-        top: 45%;
-        opacity: 1;
-    }
+}
+
+a {
+    list-style: none;
+    display: flex;
+    padding: 10px 20px;
+    color: #111111;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header a:hover {
+    color: #e10e68;
+}
+
+#arrowdown {
+    position: relative;
+    left: 5px;
+}
+
+header #menu-icon {
+    font-size: 20px;
+    margin-right: 30px;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    font-size: 80px;
+    color: #ffffff;
+    margin-bottom: 70vh;
+    font-weight: 400;
+}
+
+p {
+    color: black;
+    font-size: 70px;
+    margin: 20px;
+    text-align: center;
+}
+
+
+/* Drop down menu code */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e10e65;
+    min-width: 300px;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #692354;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#arrow {
+    color: #1A1A1A;
+    height: 80px;
+    width: 80px;
+    border-radius: 3%;
+    position: absolute;
+    transition: 0.5s ease;
+    animation: animate 2s ease 1;
+    top: 45%;
+    opacity: 1;
 }
 
 #nft-token {
